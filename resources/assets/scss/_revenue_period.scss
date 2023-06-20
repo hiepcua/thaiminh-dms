@@ -1,0 +1,47 @@
+.table-revenue-period {
+    thead tr th {
+        white-space: nowrap;
+    }
+
+    .row {
+        &-group-name {
+            white-space: nowrap;
+        }
+
+        &-sub-group-name {
+            white-space: nowrap;
+        }
+
+        &-revenue {
+            input[type="text"] {
+                min-width: 110px;
+            }
+        }
+
+        &-discount_rate {
+            vertical-align: top;
+        }
+
+        &-priority_discount_rate {
+            vertical-align: top;
+        }
+
+        &-priority_product_min {
+            vertical-align: top;
+        }
+
+        &-product_conditions {
+            .repeater-select {
+                flex: 1;
+            }
+
+            .repeater-input {
+                flex: 0 0 80px;
+            }
+        }
+
+        &-total {
+            vertical-align: top;
+        }
+    }
+}

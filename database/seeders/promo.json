@@ -1,0 +1,111 @@
+[
+    {
+        "promotion": {
+            "name": "Khuyến mại quà theo số lượng",
+            "desc": "",
+            "started_at": "2022-10-11 00:00:00",
+            "ended_at": "2022-10-31 23:59:59",
+            "auto_apply": 2,
+            "status": 1,
+            "created_by": 1000000241
+        },
+        "conditions": [
+            {
+                "name": "Tặng Niệu Bảo KM",
+                "type": 1,
+                "condition": [
+                    {
+                        "includes": {
+                            "all": true
+                        },
+                        "excludes": {},
+                        "conditions": [
+                            {
+                                "productQty": 5,
+                                "gift": 4,
+                                "giftQty": 1
+                            },
+                            {
+                                "productQty": 10,
+                                "gift": 5,
+                                "giftQty": 3
+                            }
+                        ]
+                    },
+                    {
+                        "includes": {
+                            "products": [
+                                1,
+                                2
+                            ]
+                        },
+                        "excludes": {},
+                        "conditions": [
+                            {
+                                "productQty": 5,
+                                "gift": 4,
+                                "giftQty": 1
+                            },
+                            {
+                                "productQty": 10,
+                                "gift": 5,
+                                "giftQty": 3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Chiết khấu group 1 nhóm 2, sp TPL, TPL Plus",
+                "type": 2,
+                "condition": [
+                    {
+                        "includes": {
+                            "subGroups": [
+                                5
+                            ]
+                        },
+                        "excludes": {},
+                        "conditions": [
+                            {
+                                "minQty": 2,
+                                "minType": 1,
+                                "giftQty": 1,
+                                "gift": 13
+                            },
+                            {
+                                "minQty": 5,
+                                "minType": 2,
+                                "giftQty": 1,
+                                "gift": 14
+                            }
+                        ]
+                    },
+                    {
+                        "includes": {
+                            "products": [
+                                1,
+                                2
+                            ]
+                        },
+                        "excludes": {},
+                        "conditions": [
+                            {
+                                "minQty": 2,
+                                "minType": 1,
+                                "giftQty": 1,
+                                "gift": 7
+                            },
+                            {
+                                "minQty": 5,
+                                "minType": 2,
+                                "giftQty": 1,
+                                "gift": 8
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

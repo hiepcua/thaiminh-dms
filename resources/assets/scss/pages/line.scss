@@ -1,0 +1,23 @@
+#list-store .store-item {
+    .info {
+    }
+
+    .btn-remove {
+    }
+}
+
+#wg-store, .height500 {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+#input-filter-store-locality:focus {
+    border: 1px solid #7367f0 !important;
+    border-right: 0px !important;
+}
+
+#table-store-locality .chk-store:disabled {
+    opacity: 1;
+    border-color: #d8d6de;
+    background-color: transparent;
+}

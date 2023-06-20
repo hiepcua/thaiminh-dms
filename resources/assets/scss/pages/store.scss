@@ -1,0 +1,16 @@
+.image-thumbs .thumb {
+    height: 80px;
+    object-fit: cover;
+}
+
+span.input-group-text.cursor-pointer.text-danger {
+    background-color: #efefef;
+}
+
+.input-group:not(.bootstrap-touchspin):focus-within .input-group-text {
+    border: 1px solid #4484e352 !important;
+}
+
+form input.error, form input.error:focus, form input.error + span.input-group-text.cursor-pointer.text-danger {
+    border-color: #ea5455 !important;
+}

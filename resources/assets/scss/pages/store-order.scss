@@ -1,0 +1,140 @@
+.promotion-wrapper {
+    --gap: 1rem;
+    gap: var(--gap);
+
+    .promo-item:not(:last-of-type) {
+        border: 0 none;
+    }
+
+    .promo-item-border {
+        border: 1px solid #ebe9f1;
+    }
+
+    .promotion {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .readonly {
+            position: relative;
+            cursor: not-allowed;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+            }
+        }
+
+        [data-order] {
+            .badge {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+#product-table {
+    .feather-gift {
+        position: relative;
+        top: -3px;
+        margin-right: 5px;
+    }
+}
+
+.accordion button[aria-controls="accordionWrapperPromo"] {
+    gap: 10px;
+    font-size: 1.286rem;
+}
+
+.feather-star {
+    vertical-align: baseline;
+}
+
+.disabled-touchspin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#form-store-orders {
+    input[type="number"] ~ .error {
+        text-align: right;
+        display: block;
+    }
+}
+
+#store-order-list {
+    .col_product {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+.popover {
+    max-width: 300px;
+}
+
+.store-order-info {
+    p {
+        margin-bottom: 0;
+        display: flex;
+        gap: 1rem;
+        color: var(--bs-body-color);
+
+        span:first-child {
+            white-space: nowrap;
+            min-width: 95px;
+        }
+    }
+}
+
+.tooltipster-sidetip.tooltipster-top {
+    .tooltipster-box {
+        margin-bottom: 9px;
+    }
+
+    .tooltipster-arrow-border {
+        border-top-color: #4484e3;
+    }
+}
+
+.tooltipster-sidetip.tooltipster-noir {
+    &.tooltipster-top .tooltipster-arrow-background {
+        top: -3px;
+    }
+
+    .tooltipster-box {
+        border: 2px solid #4484e3;
+    }
+}
+
+.component-search-form {
+    #form-created_by ~ .select2-container {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feather-gift-fix {
+        position: relative;
+        top: -2px;
+    }
+    .bd1 {
+        border: 1px solid #dee2e6;
+    }
+}
+
+@media (min-width: 768px) {
+    .promotion-wrapper .promo-item {
+        width: calc(100% / 2 - (var(--gap) / 2));
+    }
+}

@@ -1,0 +1,57 @@
+.table-priority{
+
+    .group{
+        width: 100px;
+    }
+    .sub_group{
+        width: 100px;
+    }
+    .chuky, .group, .sub_group{
+        padding: 0px 15px;
+        text-align: center;
+        min-width: 100px;
+    }
+    .wr-chuky:first-child {
+        border-top: 1px solid #ccc;
+    }
+    .wr-chuky {
+        border: 1px solid #ccc;
+        border-top: 0px;
+        align-items: center;
+        .wr-group {
+            border: 1px solid #ccc;
+            border-bottom: 0px;
+            align-items: center;
+            .wr-sub_group {
+                border-left: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                align-items: center;
+                .product{
+                    padding: 10px;
+                    border-left: 1px solid #ccc;
+                    .rounded{
+                        border: dotted 1.5px #333;
+                    }
+                    .rounded:hover {
+                        background-color: #7367f0;
+                        color: #fff;
+                        border-color: #7367f0;
+                    }
+                }
+            }
+            .wr-sub_group:last-child {
+                border-bottom: 0px;
+            }
+        }
+        .wr-group:first-child {
+            border-top: 0px;
+        }
+    }
+
+    .chuky{
+        width: 200px;
+        padding: 10px 0px;
+    }
+
+}
+
